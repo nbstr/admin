@@ -1,0 +1,12 @@
+<header></header>
+<nav class="menu">
+	<ul>
+		<li class="head"><img src="_css/assets/logo.png" alt="logo"></li>
+		<li class="list {{urlClass(e.link)}}" data-ng-repeat="e in nav_elements" callback="nav_display()">
+			<a href="{{e.link}}" nav>
+				<i class="fa {{e.icon}}"></i>
+				{{e.title}}
+			</a>
+		</li>
+	</ul>
+</nav>
